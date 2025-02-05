@@ -1,14 +1,14 @@
 {
-  "name": "ALPHA-MD",
-  "description": "Alpha is a multidevice WhatsApp bot built to make your WhatsApp enjoyable..",
+  "name": "WOLF-MD",
+  "description": "Wolf is a multidevice WhatsApp bot built to make your WhatsApp enjoyable..",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://telegra.ph/file/b148f6ed21fa02ac5325b.jpg",
-  "repository": "https://github.com/Keithkeizzah/ALPHA-MD",
+  "logo": "https://files.catbox.moe/syqk72.jpg",
+  "repository": "https://github.com/Lupin-lion/WOLF-MD",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -104,12 +104,12 @@
     },
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
-      "value": "",
+      "value": "Colince Lupin",
       "required": false
     },
     "URL": {
       "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "",
+      "value": "https://files.catbox.moe/syqk72.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -119,7 +119,7 @@
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '254796299159')",
-      "value": "254796299159",
+      "value": "254114146769",
       "required": false
     },
     "WARN_COUNT": {
