@@ -171,8 +171,8 @@ zk.ev.on('call', async (callData) => {
             /* const lupin='254114146769';
              const lupin='254799582173';
              const Ghost='254110190196'*/
-            /*  var superUser=[servBot,lupin, Keithkeizzah,Ghost].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
-              var dev =[Colince Lupin ,Keith].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
+            /*  var superUser=[servBot,Sams,lupin, Keithkeizzah,Ghost].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
+              var dev =[Colince Lupin,Sams ,Keith].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
             var infosGroupe = verifGroupe ? await zk.groupMetadata(origineMessage) : "";
             var nomGroupe = verifGroupe ? infosGroupe.subject : "";
@@ -199,7 +199,7 @@ zk.ev.on('call', async (callData) => {
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
-            var dev = [keith,Lupin].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+            var dev = [keith,Sams,Lupin].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
             console.log("\t [][]...{WOLF-MD}...[][]");
             console.log("=========== New message ===========");
@@ -866,7 +866,7 @@ ${metadata.desc}`;
 ┃ 
 ┃
 ┃ *Thank you for choosing*                      
-┃  *$WOLF.BOT}*
+┃  *WOLF.BOT}*
 ┃
 ╰═════════════════⊷`;
                 await zk.sendMessage(zk.user.id, {
