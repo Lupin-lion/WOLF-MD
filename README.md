@@ -39,7 +39,7 @@
 ###  𝐃𝐄𝐏𝐋𝐎𝐘 𝐎𝐍 𝐇𝐄𝐑𝐎𝐊𝐔:
 
 
- ***[![Tap to deploy on heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/Lupin-lion/WOLF-MD&template=https://github.com/Lupin-lion/WOLF-MD.git)***
+ ***[![Tap to deploy on heroku](https://img.shields.io/badge/-Heroku%20Deploy-purple?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?button-url=https://github.com/Lupin-lion/WOLF-MD&template=https://github.com/Lupin-lion/WOLF-MD.git)***
 
 <br>
 
