@@ -63,7 +63,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/keizzah/mesfonctions")
 let { reagir } = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/ALPHA-MD;;;=>/g,"");
+var session = conf.session.replace(/WOLF-MD;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 const express = require("express");
 const app = express();
@@ -170,7 +170,8 @@ zk.ev.on('call', async (callData) => {
             var servBot = idBot.split('@')[0];
             /* const keith='254748387615';
              const Keithkeizzah='254796299159';
-             const Ghost='254110190196'*/
+             const Ghost='254110190196'
+             const Lupin='254114146769*/
             /*  var superUser=[servBot,keith, Keithkeizzah,Ghost].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
               var dev =[keith, Keithkeizzah,Ghost].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
@@ -190,6 +191,7 @@ zk.ev.on('call', async (callData) => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
+            const lupin = '254114146769'
             const keith = '254748387615';
             const Keithkeizzah = '254796299159';
             const Ghost = "254110190196";
@@ -201,7 +203,7 @@ zk.ev.on('call', async (callData) => {
             
             var dev = [keith, Keithkeizzah,Ghost,Sams].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{ALPHA-MD}...[][]");
+            console.log("\t [][]...{WOLF-MD}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
@@ -502,7 +504,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'ALPHA-MD',
+                pack: 'WOLF-MD',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -644,7 +646,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `╭═══◇KEITH-TECH◇═══⊷
+            let msg = `╭═══◇LUPIN-TECH◇═══⊷
 `;
              
             let membres = group.participants;
@@ -663,7 +665,7 @@ ${metadata.desc}`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `Goodbye to that Fallen soldier, Powered by*;\n`;
+            let msg = `Goodbye to that Fallen soldier, Powered by* wolf-md;\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
@@ -787,7 +789,7 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Alpha is connecting to your account...");
+                console.log("ℹ️ Wolf is connecting to your account...");
             }
             else if (connection === 'open') {
                 await zk.groupAcceptInvite("KOvNtZbE3JC32oGAe6BQpp");
@@ -851,12 +853,12 @@ ${metadata.desc}`;
         };
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `Hello👋  *${conf.OWNER_NAME}*  😎 ,
+                let cmsg = `Wozza  *${conf.OWNER_NAME}*  😎 ,
                  *${getGreeting()},*
                  *It's ${formattedDate} 🗓️*
                  *the time is ${formattedTime}.🕛*      
  ╭════⊷         
-║ *『 ${conf.BOT} 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞』*
+║ *『 WOLF.BOT} 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞』*
 ║    Prefix : [ ${prefixe} ]
 ║    Mode :${md}
 ║    Total Commands : ${evt.cm.length}︎
@@ -866,7 +868,7 @@ ${metadata.desc}`;
 ┃ 
 ┃
 ┃ *Thank you for choosing*                      
-┃  *${conf.BOT}*
+┃  *WOLF-MD*
 ┃
 ╰═════════════════⊷`;
                 await zk.sendMessage(zk.user.id, {
