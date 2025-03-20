@@ -1,11 +1,9 @@
-Here's a polished and elevated version of your content to make it even more stunning and engaging!
 
----
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <h1 align="center" style="font-family: 'Arial Black', sans-serif; color: #6200ea;">⚜️ WOLF-MD ⚜️</h1>
 
-<h3 align="center" style="font-family: 'Courier New', monospace; color: #ff5722;">"Throw me to the wolves and I'll return leading the pack 🐺🏞️. Life of a man is defined by how he sleeps. Insh'Allah 🙏🏿"</h3>
+<h3 align="center" style="font-family: 'Courier New', monospace; color: #ff5722;">"In the wilderness of challenges, I rise with the strength of a wolf, led by the wisdom of Lupin🐺🏞️. Life of a man is defined by how he sleeps. Insh'Allah 🙏🏿"</h3>
 
 ---
 
