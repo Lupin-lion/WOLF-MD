@@ -1,87 +1,84 @@
+Here's a polished and elevated version of your content to make it even more stunning and engaging!
+
+---
+
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<h1 align="center"> WOLF-MD </h1>
+<h1 align="center" style="font-family: 'Arial Black', sans-serif; color: #6200ea;">⚜️ WOLF-MD ⚜️</h1>
 
- 
-<h1 align="center"> Throw me unto the wolves and I'll return leading the park 🏞️😁. Whoever left you in the forest should not know what the Wolves did to you.Life of a man is described by the time he sleeps.. Insh'Allah 🙏🏿
-</h1>
+<h3 align="center" style="font-family: 'Courier New', monospace; color: #ff5722;">"Throw me to the wolves and I'll return leading the pack 🐺🏞️. Life of a man is defined by how he sleeps. Insh'Allah 🙏🏿"</h3>
 
+---
 
+<a href="https://ibb.co/N6NMDtn"><img src="https://files.catbox.moe/syqk72.jpg" alt="01" border="0" style="display:block; margin:auto; width:70%;"/></a>                     
+<a><img src='https://i.imgur.com/LyHic3i.gif' style="margin-top:20px;"/></a>
 
-  <a href="https://ibb.co/N6NMDtn"><img src="https://files.catbox.moe/syqk72.jpg" alt="01" border="0" /></a>                     
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
- 
+---
 
 <details>
-<summary>𝐕𝐈𝐄𝐖 𝐋𝐀𝐓𝐄𝐒𝐓 𝐁𝐎𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 𝐇𝐄𝐑𝐄👇</summary>
-  
-- 𝐀𝐥𝐥 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐞𝐫𝐫𝐨𝐫𝐬 𝐟𝐢𝐱𝐞𝐝
-- 𝐀𝐧𝐭𝐢𝐜𝐚𝐥𝐥 𝐚𝐝𝐝𝐞𝐝
--𝐀𝐧𝐭𝐢𝐝𝐞𝐥𝐞𝐭𝐞 𝐚𝐝𝐝𝐞𝐝
--𝐀𝐧𝐝 𝐦𝐚𝐧𝐲 𝐦𝐨𝐫𝐞 𝐣𝐮𝐬𝐭 𝐝𝐞𝐩𝐥𝐨𝐲 𝐭𝐡𝐞 𝐛𝐨𝐭 𝐧𝐨𝐰
+<summary style="cursor:pointer; font-size:18px; font-weight:bold; color:#6a1b9a;">✨ VIEW LATEST BOT UPDATES ✨</summary>
+<br>
+
+✔️ **All download errors fixed**  
+✔️ **Anti-call feature added**  
+✔️ **Anti-delete feature added**  
+✔️ **And much more—deploy the bot now to explore! 🚀**  
 
 </details>
 
+---
 
-**👇FORK REPO**
-
-  
-
-<a href="https://github.com/Lupin-lion/WOLF-MD/fork"><img src="https://img.shields.io/badge/CLICK%20HERE-purple" alt="FORK WOLF" width="150"></a>
-
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
- <h1 align="center">  𝐆𝐄𝐓 𝐘𝐎𝐔𝐑 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 </h1>
-  <a href="https://wolf-md-session.onrender.com"><img src="https://img.shields.io/badge/Pair%20session%20code-white" alt="𝐏𝐚𝐢𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐝𝐞" width="300"></a>
-
-
-
-###  𝐃𝐄𝐏𝐋𝐎𝐘 𝐎𝐍 𝐇𝐄𝐑𝐎𝐊𝐔:
-
-
- ***[![Tap to deploy on heroku](https://img.shields.io/badge/-Heroku%20Deploy-purple?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?button-url=https://github.com/Lupin-lion/WOLF-MD&template=https://github.com/Lupin-lion/WOLF-MD.git)***
-
-<br>
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
- 
-
-  
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-
-
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-## 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦 𝗕𝗬 𝗝𝗢𝗜𝗡𝗜𝗡𝗚 𝗧𝗛𝗘𝗦𝗘 𝗟𝗜𝗡𝗞𝗦
-
-**𝗚𝗿𝗼𝘂𝗽**
-- <a href="https://chat.whatsapp.com/EIV9hfCuVed64PwCc5ha2O" target="_blank">
-    <img alt="CLICK HERE" src="https://img.shields.io/badge/ JOIN OUR WHATSAPP GROUP  -25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<h2 align="center" style="color: #4caf50;">🔗 FORK THE REPO</h2>
+<div align="center">
+  <a href="https://github.com/Lupin-lion/WOLF-MD/fork">
+    <img src="https://img.shields.io/badge/FORK%20WOLF%20-MD%20🛠️-purple?style=for-the-badge" alt="FORK WOLF" width="200"/>
   </a>
+</div>
 
+<a><img src='https://i.imgur.com/LyHic3i.gif' style="margin-top:20px;"/></a>
 
-**𝗖𝗵𝗮𝗻𝗻𝗲𝗹**
-<p align="centre">
+---
+
+<h2 align="center" style="color: #3f51b5;">💻 GET YOUR SESSION</h2>
+<div align="center">
+  <a href="https://wolf-md-session.onrender.com">
+    <img src="https://img.shields.io/badge/Pair%20Session%20Code%20📲-blue?style=for-the-badge&logo=whatsapp" alt="Pair session code" width="250"/>
+  </a>
+</div>
+
+---
+
+### 🚀 DEPLOY ON HEROKU:
+
+<div align="center">
+  <a href="https://dashboard.heroku.com/new?button-url=https://github.com/Lupin-lion/WOLF-MD&template=https://github.com/Lupin-lion/WOLF-MD.git">
+    <img src="https://img.shields.io/badge/-HEROKU%20DEPLOY-purple?style=for-the-badge&logo=heroku&logoColor=white" alt="Deploy to Heroku"/>
+  </a>
+</div>
+
+<a><img src='https://i.imgur.com/LyHic3i.gif' style="margin-top:20px;"/></a>
+
+---
+
+<h2 align="center" style="color: #ffa726;">🌟 SUPPORT US 🌟</h2>
+<div align="center">
+  <h3>🌐 Join Our Community 🌐</h3>
+  <a href="https://chat.whatsapp.com/EIV9hfCuVed64PwCc5ha2O" target="_blank">
+    <img src="https://img.shields.io/badge/-JOIN OUR WHATSAPP GROUP-green?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Join WhatsApp Group" />
+  </a>
+  <br><br>
+  <h3>📢 Stay Updated 📢</h3>
   <a href="https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47">
-    <img  />
-  
+    <img src="https://img.shields.io/badge/-FOLLOW OUR CHANNEL-darkgreen?style=for-the-badge&logo=whatsapp" alt="Join Channel"/>
+  </a>
+</div>
 
-   
-   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+---
 
-
-    
-
-Enjoy the diverse features of WOLF-𝐌𝐃  to enhance your Whatsapp more enjoyable
-
+<h3 align="center" style="color: #f44336;">Explore WOLF-MD's diverse features to enhance your WhatsApp experience 🐺!</h3>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-Thanks to colince Lupin 👊🏿 
-Lupin Tech
 
+<h5 align="center" style="font-style:italic; color:gray;">Special thanks to Colince Lupin 👊🏿 Lupin Tech</h5>
+
+---
+
+This refreshed version should exude elegance and professionalism while keeping it bold and engaging. Let me know if you'd like to tweak further or add any more exciting elements! 🚀
