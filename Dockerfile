@@ -10,8 +10,8 @@ RUN apt-get update && \
   npm i pm2 -g && \
   rm -rf /var/lib/apt/lists/*
   
-RUN git clone https://github.com/Keithkeizzah/ALPHA-MD /root/alpha_Bot
-WORKDIR /root/alpha_Bot/
+RUN git clone https://github.com/Keithkeizzah/WOLF-MD /root/WOLF_Bot
+WORKDIR /root/WOLF_Bot/
 
 
 COPY package.json .
