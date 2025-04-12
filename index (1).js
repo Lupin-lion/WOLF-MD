@@ -60,7 +60,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/keizzah/mesfonctions")
 let { reagir } = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/ALPHA-MD;;;=>/g,"");
+var session = conf.session.replace(/WOLF-MD;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 const express = require("express");
 const app = express();
@@ -100,7 +100,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Alpha-Md', "safari", "1.0.0"],
+            browser: ['WOLF-Md', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -197,7 +197,7 @@ zk.ev.on('call', async (callData) => {
             
             var dev = [keith, Keithkeizzah,Ghost].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{ALPHA-MD}...[][]");
+            console.log("\t [][]...{WOLF-MD}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
