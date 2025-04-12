@@ -60,7 +60,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/keizzah/mesfonctions")
 let { reagir } = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/WOLF-MD;;;=>/g,"");
+var session = conf.session.replace(/ALPHA-MD;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 const express = require("express");
 const app = express();
@@ -100,7 +100,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['WOLF-Md', "safari", "1.0.0"],
+            browser: ['Alpha-Md', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -197,7 +197,7 @@ zk.ev.on('call', async (callData) => {
             
             var dev = [keith, Keithkeizzah,Ghost].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{WOLF-MD}...[][]");
+            console.log("\t [][]...{ALPHA-MD}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
@@ -498,7 +498,7 @@ function mybotpic() {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'WOLF-MD',
+                pack: 'ALPHA-MD',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -640,7 +640,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `╭═══◇LUPIN-TECH◇═══⊷
+            let msg = `╭═══◇KEITH-TECH◇═══⊷
 `;
              
             let membres = group.participants;
@@ -783,7 +783,7 @@ ${metadata.desc}`;
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ WOLF-MD is connecting to your account...");
+                console.log("ℹ️ Alpha is connecting to your account...");
             }
             else if (connection === 'open') {
                 await zk.groupAcceptInvite("KOvNtZbE3JC32oGAe6BQpp");
