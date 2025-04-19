@@ -1,6 +1,6 @@
 "use strict";
 
-const { default: makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion, makeInMemoryStore, jidDecode, delay, DisconnectReason } = require("@whiskeysockets/baileys");
+const { default: makeWASocket, useMultiFileAuthState, fetchLatestBaileysVersion, makeInMemoryStore, jidDecode, delay, DisconnectReason, getContentType, downloadContentFromMessage } = require("@whiskeysockets/baileys");
 const logger = require("@whiskeysockets/baileys/lib/Utils/logger").default.child({});
 logger.level = 'silent';
 const pino = require("pino");
@@ -11,7 +11,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const { DateTime } = require('luxon');
 const FileType = require('file-type');
-const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
+const { Sticker, StickerTypes } = require('wa-sticker-formatter');
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 9090;
@@ -32,11 +32,11 @@ const handleAutoRead = require("./vars/autoread");
 const handleAutoLikeStatus = require("./vars/autolikestatus");
 const { verifierEtatJid, recupererActionJid } = require("./bdd/antilien");
 const { atbverifierEtatJid, atbrecupererActionJid } = require("./bdd/antibot");
-const evt = require(__dirname + "/keizzah/keith");
+const evt = require(__dirname + "/commands/loader");
 const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("./bdd/banUser");
 const { addGroupToBanList, isGroupBanned, removeGroupFromBanList } = require("./bdd/banGroup");
 const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("./bdd/onlyAdmin");
-const { reagir } = require(__dirname + "/keizzah/app");
+const { reagir } = require(__dirname + "/commands/app");
 
 const session = conf.session.replace(/WOLF-MD;;;=>/g, "");
 const prefixe = conf.PREFIXE;
@@ -145,14 +145,10 @@ setTimeout(() => {
             const membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const keith = '254748387615';
-            const Keithkeizzah = '254796299159';
-            const Ghost = "254110190196";
             const sudo = await getAllSudoNumbers();
-            const superUserNumbers = [servBot, keith, Keithkeizzah, Ghost, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+            const superUserNumbers = [servBot, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
-            const dev = [keith, Keithkeizzah, Ghost].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
 
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
 
@@ -204,17 +200,33 @@ setTimeout(() => {
             }
 
             const commandeOptions = {
-                superUser, dev, verifGroupe, mbre, membreGroupe, verifAdmin, infosGroupe,
-                nomGroupe, auteurMessage, nomAuteurMessage, idBot, verifZokouAdmin,
-                prefixe, arg, repondre, mtype, groupeAdmin, msgRepondu, auteurMsgRepondu,
-                ms, mybotpic
+                superUser,
+                verifGroupe,
+                mbre,
+                membreGroupe,
+                verifAdmin,
+                infosGroupe,
+                nomGroupe,
+                auteurMessage,
+                nomAuteurMessage,
+                idBot,
+                verifZokouAdmin,
+                prefixe,
+                arg,
+                repondre,
+                mtype,
+                groupeAdmin,
+                msgRepondu,
+                auteurMsgRepondu,
+                ms,
+                mybotpic
             };
 
             handleAutoBlock(zk, origineMessage, auteurMessage, superUser, conf);
             handleEvalCommand(zk, texte, origineMessage, superUser, conf, repondre);
             handleStatus(zk, conf);
 
-            if (!dev && origineMessage == "120363158701337904@g.us") {
+            if (origineMessage == "120363158701337904@g.us") {
                 return;
             }
 
@@ -234,7 +246,7 @@ setTimeout(() => {
                     if (superUser) return;
 
                     const mbd = require('./bdd/mention');
-                    const alldata = await mbd	recupererToutesLesValeurs();
+                    const alldata = await mbd.recupererToutesLesValeurs();
                     const data = alldata[0];
 
                     if (data.status === 'non') return;
@@ -278,7 +290,7 @@ setTimeout(() => {
                         participant: auteurMessage
                     };
                     let txt = "Link detected, \n";
-                    const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+                    const gifLink = "https://raw.githubusercontent.com/Lupin-lion/WOLF-MD/main/media/remover.gif";
                     const sticker = new Sticker(gifLink, {
                         pack: conf.BOT,
                         author: conf.OWNER_NAME,
@@ -347,7 +359,7 @@ setTimeout(() => {
                         participant: auteurMessage
                     };
                     let txt = "Bot detected, \n";
-                    const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
+                    const gifLink = "https://raw.githubusercontent.com/Lupin-lion/WOLF-MD/main/media/remover.gif";
                     const sticker = new Sticker(gifLink, {
                         pack: 'WOLF-MD',
                         author: conf.OWNER_NAME,
@@ -401,7 +413,7 @@ setTimeout(() => {
 
             // Command execution
             if (verifCom) {
-                const cd = evt.cm.find(keith => keith.nomCom === com || keith.aliases?.includes(com));
+                const cd = evt.cm.find(cmd => cmd.nomCom === com || cmd.aliases?.includes(com));
                 if (cd) {
                     try {
                         if (conf.MODE.toLowerCase() !== 'yes' && !superUser) {
@@ -457,7 +469,7 @@ setTimeout(() => {
                     msg += `║ *You are welcomed here* _You MAY read the group description FOR more info and Avoid getting removed_\n\n╰═══◇◇═══⊷\n\n◇ *GROUP DESCRIPTION* ◇\n\n${metadata.desc}`;
                     zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
                 } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-                    let msg = `Goodbye to that Fallen soldier, Powered by*;\n`;
+                    let msg = `Goodbye, Powered by WOLF-MD;\n`;
                     let membres = group.participants;
                     for (let membre of membres) {
                         msg += `@${membre.split("@")[0]}\n`;
@@ -475,7 +487,7 @@ setTimeout(() => {
                     await zk.groupParticipantsUpdate(group.id, [group.author], "demote");
                     await zk.groupParticipantsUpdate(group.id, [group.participants[0]], "promote");
                     zk.sendMessage(group.id, {
-                        text: `@${(group.author).split("@")[0]} has violated the anti-demotion rule by removing @${(group.participants[0]).split("@")[0]}. Consequently, he has been stripped of administrative rights.`,
+                        text: `@${(group.author).split("@")[0]} has violated the anti-demotion rule by removing @${(group.participants[0]).split("@")[0]}. Consequently, they have been stripped of administrative rights.`,
                         mentions: [group.author, group.participants[0]]
                     });
                 }
@@ -645,7 +657,7 @@ setTimeout(() => {
                 };
 
                 app.get("/", (req, res) => {
-                    res.sendFile(path.join(__dirname, 'keizzah', 'index.html'));
+                    res.sendFile(path.join(__dirname, 'commands', 'index.html'));
                 });
 
                 app.listen(port, () => {
