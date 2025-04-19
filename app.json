@@ -1,6 +1,6 @@
 {
   "name": "WOLF-MD",
-  "description": "Wolf is a multidevice WhatsApp bot built to make your WhatsApp enjoyable..",
+  "description": "Wolf is a multidevice WhatsApp bot built to make your WhatsApp enjoyable.",
   "keywords": [
     "bot",
     "node",
@@ -9,7 +9,7 @@
   ],
   "logo": "https://files.catbox.moe/syqk72.jpg",
   "repository": "https://github.com/Lupin-lion/WOLF-MD",
-  "succes_url": "/",
+  "success_url": "/",
   "stack": "container",
   "env": {
     "PREFIX": {
@@ -23,7 +23,7 @@
       "required": false
     },
     "GREET": {
-      "description": "when enabled it automatically sends  greeting message to members in your pm",
+      "description": "When enabled, sends greeting message to members in your PM",
       "value": "no",
       "required": false
     },
@@ -33,7 +33,7 @@
       "required": false
     },
     "AUTOBIO": {
-      "description": "This automatically update your bio status.Always make sure you insert your OWNER_NAME since it uses that to update your bio name status",
+      "description": "Automatically updates your bio status using OWNER_NAME",
       "value": "yes",
       "required": false
     },
@@ -48,37 +48,37 @@
       "required": false
     },
     "AUTO_STATUS_MSG": {
-      "description": "type your genuine status message",
+      "description": "Type your genuine status message",
       "value": "viewed ✅✅",
       "required": false
     },
     "AUTO_STATUS_REPLY": {
-      "description": "type your genuine status message",
+      "description": "Type your genuine status reply message",
       "value": "no",
       "required": false
     },
     "ANTICALL_MSG": {
-      "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
+      "description": "Type your anticall message to send when calls are declined (leave blank for none)",
       "value": "",
       "required": false
     },
     "BOT_NAME": {
-      "description": "you must give a name for you bot uhh??!!",
-      "value": "",
-      "required": false 
+      "description": "Name of your bot",
+      "value": "WOLF-MD",
+      "required": true
     },
     "EMOJIS": {
-      "description": "you must give a name for you bot uhh??!!",
+      "description": "Emojis for bot responses",
       "value": "💜,😎,😂",
-      "required": false 
+      "required": false
     },
     "TIMEZONE": {
-      "description": "you must give a name for you bot uhh??!!",
+      "description": "Timezone for bot operations",
       "value": "Africa/Nairobi",
-      "required": false 
+      "required": false
     },
     "GROUP_CONTROL": {
-      "description": "urs if you want bot yo control group features such as antilink,antispam,antibad",
+      "description": "Enable bot to control group features like antilink, antispam, antibad",
       "value": "yes",
       "required": false
     },
@@ -88,34 +88,34 @@
       "required": false
     },
     "HEROKU_API_KEY": {
-      "description": "Insert your Heroku API key (required)",
+      "description": "Insert your Heroku API key",
       "value": "",
       "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "Insert your Heroku app name (required)",
+      "description": "Insert your Heroku app name",
       "value": "",
       "required": true
     },
     "SESSION_ID": {
-      "description": "Enter your session ID, the code you receive after scanning the QR code",
+      "description": "Enter your session ID from scanning the QR code",
       "value": "",
       "required": true
     },
     "OWNER_NAME": {
-      "description": "don't you have a name bro.Insert your name here!!",
+      "description": "Your name as the bot owner",
       "value": "Colince Lupin",
       "required": false
     },
     "URL": {
-      "description": "you must add your bot image url.Get your image url now and fill it here",
+      "description": "URL for your bot's image",
       "value": "https://files.catbox.moe/syqk72.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
-      "description": "yes toactivate no to deactivate",
+      "description": "Set 'yes' to auto-read messages or 'no' to deactivate",
       "value": "yes",
-      "required": false  
+      "required": false
     },
     "NUMERO_OWNER": {
       "description": "Your phone number (exclude '+' and area code, e.g., '254796299159')",
@@ -148,7 +148,7 @@
       "required": false
     },
     "AUTO_BLOCK": {
-      "description": "Type true if you want bot to automatically  block those who spam your dm ",
+      "description": "Set 'yes' to auto-block users who spam your DM",
       "value": "no",
       "required": false
     },
@@ -161,7 +161,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "standard-2x"
+      "size": "free"
     }
   },
   "addons": [
